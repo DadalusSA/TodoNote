@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>PHPWebProject1</Name>
+    <ProjectGuid>97b11199-f43d-45ba-8fa9-b512c8feeaf4</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <AssemblyName>PHPWebProject1</AssemblyName>
+    <Runtime>PHP</Runtime>
+    <RuntimeVersion>7.0</RuntimeVersion>
+    <EnvName>PHPDev</EnvName>
+    <PHPDevHostName>localhost</PHPDevHostName>
+    <PHPDevAutoPort>true</PHPDevAutoPort>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="logout.php" />
+    <Compile Include="Main.php" />
+    <Compile Include="loginuser.php" />
+    <Compile Include="Note.php" />
+    <Compile Include="Register.php" />
+    <Compile Include="user\getuserdata.php" />
+    <Compile Include="db_conn.php" />
+    <Compile Include="index.php" />
+    <Compile Include="user\getusernote.php" />
+    <Compile Include="user\markdone.php" />
+    <Compile Include="user\markincom.php" />
+    <Compile Include="user\usercreate.php" />
+    <Compile Include="user\usercreatenote.php" />
+    <Compile Include="user\userdelete.php" />
+    <Compile Include="user\userdeletenote.php" />
+    <Compile Include="user\usereditnote.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="design.css" />
+    <Content Include="designtodo.css" />
+    <Content Include="js\item-ajax.js" />
+    <Content Include="js\note-ajax.js" />
+    <Content Include="Maincss.css" />
+    <Content Include="Mainpage.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="js\" />
+    <Folder Include="user\" />
+  </ItemGroup>
+</Project>
